@@ -22,8 +22,6 @@ RUN pip install --upgrade pip && \
 
 RUN pip install --no-cache-dir fastvideo
 
-RUN python -c "import fastvideo; print('fastvideo installed')"
-
 COPY handler.py /workspace/handler.py
 
 CMD ["python", "-u", "handler.py"]
